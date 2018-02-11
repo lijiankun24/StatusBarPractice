@@ -16,6 +16,7 @@
 
     <style name="LauncherTheme" parent="FullScreenTheme">
         <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowBackground">@drawable/bg_splash1</item>
     </style>
 
 </resources>

@@ -17,7 +17,8 @@
         <activity android:name=".activity.HideNavigationActivity"/>
         <activity android:name=".activity.ImmersiveActivity"/>
         <activity android:name=".activity.RespondingActivity"/>
-        <activity android:name=".activity.SplashActivity">
+        <activity android:name=".activity.SplashActivity"
+            android:theme="@style/LauncherTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

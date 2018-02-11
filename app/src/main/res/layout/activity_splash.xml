@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context="com.lijiankun24.statusbarpractice.activity.SplashActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_splash1"/>
 </android.support.constraint.ConstraintLayout>
