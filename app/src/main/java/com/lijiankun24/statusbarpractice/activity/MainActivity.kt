@@ -29,13 +29,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Toolbar.OnMenuIt
                 startActivity(Intent(this, HideStatusbarActivity::class.java))
             }
             R.id.btn_hiding_navigation -> {
-                startActivity(Intent(this, HideNavigationActivity::class.java))
+                startActivity(Intent(this, HideNavigationbarActivity::class.java))
             }
             R.id.btn_immersive -> {
                 startActivity(Intent(this, ImmersiveActivity::class.java))
             }
             R.id.btn_responding -> {
                 startActivity(Intent(this, RespondingActivity::class.java))
+            }
+            R.id.btn_transparent_statusbar -> {
+                startActivity(Intent(this, TransparentStatusbarActivity::class.java))
+            }
+            R.id.btn_transparent_navigationbar -> {
+                startActivity(Intent(this, TransparentNavigationbarActivity::class.java))
+            }
+            R.id.btn_fits_system_windows -> {
+                startActivity(Intent(this, FitsSystemWindowsActivity::class.java))
             }
         }
     }
@@ -46,6 +55,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Toolbar.OnMenuIt
         findViewById<View>(R.id.btn_hiding_statusbar).setOnClickListener(this)
         findViewById<View>(R.id.btn_immersive).setOnClickListener(this)
         findViewById<View>(R.id.btn_responding).setOnClickListener(this)
+        findViewById<View>(R.id.btn_transparent_statusbar).setOnClickListener(this)
+        findViewById<View>(R.id.btn_transparent_navigationbar).setOnClickListener(this)
+        findViewById<View>(R.id.btn_fits_system_windows).setOnClickListener(this)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)

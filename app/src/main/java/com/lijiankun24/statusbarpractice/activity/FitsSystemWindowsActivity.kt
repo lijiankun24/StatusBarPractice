@@ -1,18 +1,18 @@
 package com.lijiankun24.statusbarpractice.activity
 
 import android.os.Build
-import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import com.lijiankun24.statusbarpractice.R
 
-class HideStatusbarActivity : AppCompatActivity() {
+class FitsSystemWindowsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         hideStatusBar()
-        setContentView(R.layout.activity_hide_statusbar)
+        setContentView(R.layout.activity_fits_system_windows)
     }
 
     private fun hideStatusBar() {

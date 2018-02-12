@@ -59,6 +59,27 @@
             android:text="Responding to UI Visibility Changes"/>
 
         <View style="@style/LineStyle"/>
+
+        <Button
+            android:id="@+id/btn_transparent_statusbar"
+            style="@style/ButtonStyle"
+            android:text="Transparenting Statusbar"/>
+
+        <View style="@style/LineStyle"/>
+
+        <Button
+            android:id="@+id/btn_transparent_navigationbar"
+            style="@style/ButtonStyle"
+            android:text="Transparenting Navigationbar"/>
+
+        <View style="@style/LineStyle"/>
+
+        <Button
+            android:id="@+id/btn_fits_system_windows"
+            style="@style/ButtonStyle"
+            android:text="fits system windows"/>
+
+        <View style="@style/LineStyle"/>
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
 
