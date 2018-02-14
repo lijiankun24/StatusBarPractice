@@ -12,10 +12,11 @@ class HideNavigationbarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         hideNavigationBar()
         setContentView(R.layout.activity_hide_navigationbar)
+        window.decorView.systemUiVisibility
     }
 
     private fun hideNavigationBar() {
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
                     View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION or
                     View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or
